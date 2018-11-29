@@ -1,0 +1,26 @@
+#import urllib, json
+#url = "https://www.googleapis.com/youtube/v3/search?#part=snippet&channelId=UC3MLnJtqc_phABBriLRhtgQ&order=date&publishedAfter=2018-1-1T21:50:00Z&key=AIzaSyBZGs_NULQpduDZlaseKfLwSBpS5RInsow&maxResults=50"
+#response = urllib.urlopen(url)
+#data = json.loads(response.read())
+#print(data)
+import requests,json
+r = requests.get("https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC3MLnJtqc_phABBriLRhtgQ&order=date&publishedAfter=2018-1-1T21:50:00Z&key=AIzaSyBZGs_NULQpduDZlaseKfLwSBpS5RInsow&maxResults=50")
+file = open('YTjson.txt','w') 
+file.write(str(json.dumps(r.json(), indent=4)))
+file.close() 
+data = r.json()
+video_id=[]
+published_date=[]
+video_title=[]
+channel_title=[]
+for i in data["items"]:
+	print(i["id"]["videoId"])
+	print(i["snippet"]["publishedAt"])
+	print(i["snippet"]["title"])
+	print(i["snippet"]["channelTitle"])
+	video_id.append(i["id"]["videoId"])
+	published_date.append(i["snippet"]["publishedAt"])
+	video_title.append(i["snippet"]["title"])
+	channel_title.append(i["snippet"]["channelTitle"])
+
+

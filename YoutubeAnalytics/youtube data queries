@@ -1,0 +1,15 @@
+
+AIzaSyBZGs_NULQpduDZlaseKfLwSBpS5RInsow
+https://www.googleapis.com/youtube/v3/activities?part=snippet,contentDetails&channelId=UC3MLnJtqc_phABBriLRhtgQ&key=AIzaSyBZGs_NULQpduDZlaseKfLwSBpS5RInsow&maxResults=50
+
+
+https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC3MLnJtqc_phABBriLRhtgQ&order=date&publishedAfter=2018-1-1T21:50:00Z&key=AIzaSyBZGs_NULQpduDZlaseKfLwSBpS5RInsow&maxResults=50
+
+#Video id,video name,singers,after 2018
+https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UC3MLnJtqc_phABBriLRhtgQ&order=date&publishedAfter=2018-1-1T21:50:00Z&key=AIzaSyBZGs_NULQpduDZlaseKfLwSBpS5RInsow&maxResults=50
+
+#comments for a particular video id
+https://www.googleapis.com/youtube/v3/commentThreads?key=AIzaSyBZGs_NULQpduDZlaseKfLwSBpS5RInsow&textFormat=plainText&part=snippet&videoId=xLeRmegKOx0&maxResults=50
+
+#likes,dislikes and shares for a particular video id
+https://www.googleapis.com/youtube/v3/videos?id=xLeRmegKOx0&key=AIzaSyBZGs_NULQpduDZlaseKfLwSBpS5RInsow&part=statistics
